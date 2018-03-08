@@ -18,10 +18,6 @@ const store = configureStore();
 //   console.log(visibleExpenses);
 // });
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 3000 }));
-store.dispatch(addExpense({ description: 'Gas bill', amount: 1000, createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />
